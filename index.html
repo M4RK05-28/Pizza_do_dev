@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBAC PIZZAS - A Melhor Pizzaria DEV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+    <header>
+        <div class="container container-flex">
+            <h1>EBAC PIZZAS</h1>
+        <div class="menu-hamburguer">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        </div>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="#">Promoções</a>
+                    </li>
+                    <li>
+                        <a href="#">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="carousel-imagens">
+        <img src="./img/Dia_da_Pizza 10.png" alt="promoção 10% na pizza">
+        <img src="./img/promocoes-irresistiveis-capa-810x420.png" alt="promoção da pizza 2por1">
+        <img src="./img/promoção2por1.png" alt="promoção">
+    </div>
+    <div class="container conteudo">
+        <main>
+            <section class="sobre-a-loja">
+                <h2>EBAC PIZZA; A Melhor Pizzaria DEV</h2>
+                    <img src="./img/pizzeria-fachada1_640.jpg" alt="pizzaria">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nulla a adipisci assumenda in cum quis nihil numquam fuga consequatur architecto magni, odit ipsum iusto, reprehenderit earum harum at facere.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nulla a adipisci assumenda in cum quis nihil numquam fuga consequatur architecto magni, odit ipsum iusto, reprehenderit earum harum at facere.</p>
+            </section>
+            <section >
+                <h2>Sabores de Pizzas</h2>
+                <div class="pizzas">
+                    <ul class="container-flex ">
+                        <li>
+                            <img src="./img/frango.jpeg" alt="frango">
+                            <h3>FRANGO</h3>
+                            <p>Pizza de frango, com queijo, e tomate</p>
+                            <strong>R$25,00</strong>
+                            <button type="button">adicionar ao carrinho</button>
+                        </li>
+                        <li>
+                            <img src="./img/calabresa.jpeg" alt="calabresa">
+                            <h3>CALABRESA</h3>
+                            <p>Pizza de CALABRESA, com queijo, e tomate</p>
+                            <strong>R$25,00</strong>
+                            <button type="button">adicionar ao carrinho</button>
+                        </li>
+                        <li>
+                            <img src="./img/brocules.jpeg" alt="brocules">
+                            <h3>BROCULES</h3>
+                            <p>Pizza de brocules, com queijo, e tomate</p>
+                            <strong>R$25,00</strong>
+                            <button type="button">adicionar ao carrinho</button>
+                        </li>
+                        <li>
+                            <img src="./img/chocolate_morango.jpeg" alt="chocolate_morango">
+                            <h3>cholate com morango</h3>
+                            <p>Pizza de chocolate com morangoe</p>
+                            <strong>R$30,00</strong>
+                            <button type="button">adicionar ao carrinho</button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <aside>
+            <section class="diversao">
+                <h2>Diversão</h2>
+                <article class="diversao">
+                    <img src="./img/projeto-de-playground-1-1.jpg" alt="projeto-de-playground-1-1">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </h3>
+                </article>
+                <article class="diversao">
+                    <img src="./img/fliperamas-de-boteco.png" alt="projeto-de-playground-1-1">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </h3>
+                </article>
+                <article class="diversao">
+                    <img src="./img/kids-808660_640.jpg" alt="projeto-de-playground-1-1">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </h3>
+                </article>
+            </section>
+        </aside>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#carousel-imagens').slick({
+                autoplay:true
+            });
+
+            $('.menu-hamburguer').click(function() {
+                $('nav').slideToggle();
+            });
+        })
+    </script>
+</body>
+</html>
